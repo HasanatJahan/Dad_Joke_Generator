@@ -6,14 +6,10 @@ $(document).ready(function(){
     $.ajax({
       url:"https://www.reddit.com/r/dadjokes/.json",
       success:function(data){
-        console.log(data);
         $.each(data.children,function(i){
-          console.log(i);
           $.each(data.children[i],function(data){
-            console.log(data.children[i]);
             $.each(data.children[i].data,function(selftext,title){
-              console.log("selftext", selftext);
-              console.log("TITLE",title);
+        
             ("#output").html(data.children[i].data.title + "<br>" + data.children[i].data.selftext);
               });
             });
