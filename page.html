@@ -16,13 +16,12 @@
 <body>
 <div class="container-fluid">
 
-<!--remember to change the font on the button to soemthing more flashy and dank-->
   <button type="button" class="btn btn-block btn-lg"><strong>MOAR</strong></button>
   <div class="container container-fluid text-center">
 
 <!--this is where the quote is displayed-->
     <div class="quoteHere">
-    <p id="#output" class="output">What's smarter than a talking dog?<br>A spelling bee.</p>
+    <p id="output" class="output">What's smarter than a talking dog?<br>A spelling bee.</p>
     </div>
 
     <!--The twitter share button here-->
@@ -30,7 +29,7 @@
    class="twitter-share-button"
    data-show-count="false"
    target="_blanks"
-   data-text:title +" "+ selftext
+   data-text:dataObj.title +" "+ selftext
    data-url="https://codepen.io/HasanatJahan/full/YZvoQa">
    Tweet
    </a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
