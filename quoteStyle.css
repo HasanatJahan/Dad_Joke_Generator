@@ -2,29 +2,42 @@ body{
   background-color: #F58092;
   align-items: center;
   font-family: "Raleway", sans-serif;
-  font-weight:400;
-  transition: background 0.4s ease-in;
+  font-weight:200;
+  transition: background 0.4s ease-out;
+  line-height: normal;
 }
 
 .container{
  border-radius: 1em;
  background-color:#FFFFFF;
  margin-top: 0.7em;
- margin-bottom:2em;
- padding:2.4em;
- font-size: 40px;
+ margin-bottom: 0.7em;
+ padding:2.2em;
+ font-size: 38px;
 }
 
-#output{
+#outputTitle{
   text-align: center;
+  transition: opacity 0.3s linear;
+}
+
+.output{
+  margin-top:25px;
 }
 
 button.btn-block{
   background-color: #fff1d0;
-  margin-top:1.8em;
+  margin-top:1em;
   margin-bottom:0.8px;
   border-radius:1em;
   padding:1em;
   font-size:40px;
   text-shadow: 1px 3.5px 3.5px #aaa;
+}
+
+button.btn-block:hover{
+  color:yellow;
+  background-image: url("https://previews.123rf.com/images/nyul/nyul1102/nyul110200262/8748110-Portrait-of-happy-old-man-smiling-looking-at-camera--Stock-Photo.jpg");
+  background-size: contain;
+  transition: background 0.4s linear;
 }
